@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navdata"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="sorr.ynasir.hominchi.dashboard.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_guideFragment"
+            app:destination="@id/guideFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_tipsFragment"
+            app:destination="@id/tipsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="sorr.ynasir.hominchi.home.presentation.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_guideFragment"
+            app:destination="@id/guideFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tipsFragment"
+            app:destination="@id/tipsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guideFragment"
+        android:name="sorr.ynasir.hominchi.guide.presentation.GuideFragment"
+        android:label="fragment_guide"
+        tools:layout="@layout/fragment_guide" >
+        <action
+            android:id="@+id/action_guideFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_guideFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_guideFragment_to_tipsFragment"
+            app:destination="@id/tipsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="sorr.ynasir.hominchi.tips.presentation.TipsFragment"
+        android:label="fragment_tips"
+        tools:layout="@layout/fragment_tips" >
+        <action
+            android:id="@+id/action_tipsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_tipsFragment_to_guideFragment"
+            app:destination="@id/guideFragment" />
+        <action
+            android:id="@+id/action_tipsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

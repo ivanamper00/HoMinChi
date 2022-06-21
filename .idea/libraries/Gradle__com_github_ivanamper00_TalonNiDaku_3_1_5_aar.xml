@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ivanamper00:TalonNiDaku:3.1.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4ad18ff2b35130dad9331979c95e1730/transformed/TalonNiDaku-3.1.5/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4ad18ff2b35130dad9331979c95e1730/transformed/TalonNiDaku-3.1.5/jars/libs/FileDownloader-0.3.2.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4ad18ff2b35130dad9331979c95e1730/transformed/TalonNiDaku-3.1.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4ad18ff2b35130dad9331979c95e1730/transformed/TalonNiDaku-3.1.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ivanamper00/TalonNiDaku/3.1.5/e466480b7e50a4d0f69c58187bc98c1aa46c2c97/TalonNiDaku-3.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

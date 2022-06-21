@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="sorr.ynasir.hominchi.dashboard.MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/carousel_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1024:500"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/carousel_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:dotsColor="@color/text_color"
+            app:dotsSize="10dp"
+            app:dotsSpacing="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carousel_view"
+            app:selectedDotColor="@color/coordinate_color1" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingVertical="16dp"
+            android:clipToPadding="false"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carousel_view">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/homeCard"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="130dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/carousel_indicator"
+                app:strokeColor="@color/text_color">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/banner1">
+
+                    <TextView
+                        android:id="@+id/homeName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="3"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:background="@drawable/card_gradiant_foreground"
+                        android:gravity="bottom|end"
+                        android:padding="16dp"
+                        android:text="@string/home"
+                        android:textColor="@color/text_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/guideCard"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="15dp"
+                app:cardCornerRadius="15dp"
+                android:layout_weight="1"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/homeCard"
+                app:strokeColor="@color/text_color" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/banner2">
+
+
+                    <TextView
+                        android:id="@+id/guideName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="3"
+                        android:shadowDy="4"
+                        android:shadowRadius="4"
+                        android:text="@string/guide"
+                        android:padding="16dp"
+                        android:background="@drawable/card_gradiant_foreground"
+                        android:gravity="bottom|end"
+                        android:textColor="@color/text_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/tipsCard"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/guideCard"
+                app:strokeColor="@color/text_color" >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/banner3">
+
+
+                    <TextView
+                        android:id="@+id/tipsName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:shadowColor="@color/white"
+                        android:shadowDx="3"
+                        android:shadowDy="4"
+                        android:padding="16dp"
+                        android:shadowRadius="4"
+                        android:text="@string/tips"
+                        android:gravity="bottom|end"
+                        android:background="@drawable/card_gradiant_foreground"
+                        android:textColor="@color/text_color"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

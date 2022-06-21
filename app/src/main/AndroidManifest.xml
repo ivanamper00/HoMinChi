@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sorr.ynasir.hominchi" >
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Xosothuathienhue" >
+        <activity
+            android:name="sorr.ynasir.hominchi.dashboard.Splash"
+            android:theme="@style/splashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sorr.ynasir.hominchi.dashboard.MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+    </application>
+
+</manifest>
